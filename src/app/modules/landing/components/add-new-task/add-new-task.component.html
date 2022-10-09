@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Add New Task</h2>
+<mat-dialog-content class="">
+  <form [formGroup]="form">
+    <div class="mk-form-input">
+      <textarea matInput placeholder="Task Details" formControlName="taskdetails"></textarea>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button class="mk-btn" mat-button mat-dialog-close>Cancel</button>
+  <button class="mk-btn mx-3" [disabled]="form.invalid" mat-button
+    [mat-dialog-close]="form.controls['taskdetails'].value">Submit</button>
+</mat-dialog-actions>

@@ -1,0 +1,39 @@
+.mk-header {
+  padding: 20px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.mk-page-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.mk-page-count {
+  margin: 0px 5px;
+  padding: 3px 5px;
+  font-size: 12px;
+  box-sizing: border-box;
+  border: 1px solid #3498ff;
+  border-radius: 30%;
+  background-color: #caddff;
+}
+
+.mk-header-menu {
+  position: absolute;
+  right: 0px;
+  padding-right: 10px;
+
+  .mk-btn-link {
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+  }
+
+  .dropdown-item {
+    cursor: pointer;
+  }
+}

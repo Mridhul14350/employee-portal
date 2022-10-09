@@ -1,0 +1,37 @@
+table {
+  width: 100%;
+}
+
+.mk-emp-list-container {
+  background-color: #e0e5e9e8;
+  width: 100vw;
+  height: 82vh;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+  background-color: white;
+  color: black;
+}
+
+.mk-tbl-search-input {
+  float: right;
+  padding: 20px 10px;
+
+  input {
+    width: 30vw;
+    height: 40px;
+    border-radius: 5px;
+    padding: 3px 6px 3px 6px;
+    // border: 1px solid black;
+    border: 1px solid rgb(75, 91, 96);
+    // box-shadow: 0 0 5px rgb(75, 91, 96);
+  }
+}

@@ -1,0 +1,72 @@
+table {
+  width: 100%;
+}
+
+.mk-emp-list-container {
+  background-color: #e0e5e9e8;
+  width: 100vw;
+  height: 82vh;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+  background-color: white;
+  color: black;
+}
+
+.mk-tbl-search-input {
+  float: right;
+  // padding: 20px 10px;
+
+  input {
+    width: 30vw;
+    height: 40px;
+    border-radius: 5px;
+    padding: 3px 6px 3px 6px;
+    // border: 1px solid black;
+    border: 1px solid rgb(75, 91, 96);
+    // box-shadow: 0 0 5px rgb(75, 91, 96);
+  }
+}
+
+.mk-tbl-header {
+  height: 40px;
+  margin: 20px 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.mk-filter-menu {
+  // position: absolute;
+  // right: 0px;
+  padding-right: 10px;
+  .dropdown-item {
+    cursor: pointer;
+  }
+
+  .mk-filter-btn {
+    // width: 30vw;
+    display: flex;
+    height: 40px;
+    border-radius: 5px;
+    padding: 3px 6px 3px 6px;
+    border: 1px solid rgb(75, 91, 96);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    margin: 0;
+    font-family: inherit;
+    font-weight: 100;
+    line-height: inherit;
+  }
+}

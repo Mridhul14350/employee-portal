@@ -1,0 +1,36 @@
+<mk-header title="Employees" [count]="listCount"></mk-header>
+<div class="mk-emp-list-container">
+  <!-- <mat-form-field appearance="standard"> -->
+  <!-- <mat-label>Search</mat-label> -->
+
+  <!-- </mat-form-field> -->
+  <div class="container">
+    <div class="mk-tbl-search-input">
+      <input matInput (keyup)="search($event)" placeholder="Search Employees" #input>
+    </div>
+
+    <table mat-table [dataSource]="allEmployees" matSort>
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Employee Name</th>
+        <td mat-cell *matCellDef="let element">
+          <a routerLink="../employee-task-listing/{{element.id}}" class="mk-btn-link">{{ element.name }}</a>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="phone">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Phone</th>
+        <td mat-cell *matCellDef="let element">{{ element.phone }}</td>
+      </ng-container>
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Email</th>
+        <td mat-cell *matCellDef="let element">{{ element.email }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of Employees">
+    </mat-paginator>
+  </div>
+
+  <mk-footer></mk-footer>

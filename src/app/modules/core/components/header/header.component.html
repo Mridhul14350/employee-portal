@@ -1,0 +1,17 @@
+<div class="mk-header">
+  <div class="mk-page-title">
+    {{title}}
+  </div>
+  <div *ngIf="count" class="mk-page-count">
+    {{count}}
+  </div>
+  <div class="mk-header-menu">
+    <div class="btn-group">
+      <button type="button" class="mk-btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="../../../../../assets/img/user-avatar.jpg" alt="profile icon"> Hi, Admin
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div>

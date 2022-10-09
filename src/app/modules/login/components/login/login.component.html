@@ -1,0 +1,33 @@
+<div class="mk-container">
+  <div class="card mk-card">
+    <!-- <h4 class="card-header">Login</h4> -->
+    <div class="card-body">
+      <div class="pt-3">
+        <a routerLink="../error/page-not-found" class="mk-btn-link">Don't have an account yet?<b> Sign Up</b></a>
+      </div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="">
+          <input type="text" placeholder="Email" formControlName="username" class="mk-input" autocomplete="off">
+        </div>
+        <div class="">
+          <input type="password" placeholder="Password" formControlName="password" class="mk-input"
+            autocomplete="off" />
+
+        </div>
+
+        <mk-alert></mk-alert>
+        <div class="float-end">
+          <div class="flaot-end pt-3">
+            <a routerLink="../error/page-not-found" class="mk-btn-link">Forgot Password?</a>
+          </div>
+          <div class="float-end pt-2">
+            <button [disabled]="loading || form.invalid" class="btn btn-primary mk-btn">
+              <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+              Login
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
